@@ -29,7 +29,7 @@ class User(BaseModel, Base):
         first_name = ""
         last_name = ""
         
-    def __init__(self):
+    def __init__(self, password):
         self.password = password
     @property
     def password(self):
