@@ -28,7 +28,9 @@ class User(BaseModel, Base):
         password = ""
         first_name = ""
         last_name = ""
-
+        
+    def __init__(self):
+        self.password = password
     @property
     def password(self):
         '''
